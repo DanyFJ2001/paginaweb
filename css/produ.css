@@ -1,0 +1,43 @@
+/* Estilos para la barra de navegación */
+.navbar {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 15px 50px;
+    transition: top 0.3s;
+}
+
+.navbar .container {
+    width: 100%;
+    max-width: 100%;
+}
+
+.navbar .navbar-brand {
+    font-size: 24px;
+    color: #fff;
+}
+
+.navbar .navbar-nav {
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 1;
+}
+
+.navbar .nav-item {
+    margin: 0 15px;
+}
+
+.navbar .nav-link {
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+/* Estilos para el footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+  
+
