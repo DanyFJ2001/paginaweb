@@ -10,6 +10,8 @@ body, html {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
 }
 
 .navbar {
@@ -54,19 +56,89 @@ body, html {
   font-size: 18px;
 }
 
-.section.about-section {
+.about-us {
   padding: 100px 0;
-  color: #fff;
 }
 
-.about-section h2 {
-  font-size: 36px;
+.about-us h2 {
+  font-size: 48px;
   margin-bottom: 20px;
 }
 
-.about-section p {
+.about-us p {
   font-size: 20px;
   line-height: 1.6;
+}
+
+.services {
+  background-image: linear-gradient(
+      rgba(70, 66, 66, 0.7),
+      rgba(0, 0, 0, 0.7)
+  ), url(imagenes/nso.avif);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 100px 0;
+}
+
+.services-content {
+  text-align: center;
+}
+
+.services-content h2 {
+  font-size: 55px;
+  line-height: 70px;
+  color: #f9f9f9;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+
+.services-content p {
+  font-size: 16px;
+  color: bisque;
+  margin-bottom: 50px;
+  padding: 0 100px;
+}
+
+.services-group {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.services-1 {
+  padding: 0 100px;
+}
+
+.services-1 img {
+  width: 90px;
+  margin-bottom: px;
+}
+
+.services-1 h3 {
+  color: #3f3d3c;
+  font-size: 18px;
+}
+
+.general {
+  display: flex;
+}
+
+.general-1 {
+  width: 100%;
+  padding: 100px 250px 100px 100px;
+  background-color: #e1e2e6;
+}
+
+.general p {
+  font-size: 16px;
+  color: #3f3d3c;
+  margin-bottom: 35px;
+}
+
+main {
+  flex: 1;
 }
 
 .footer {
@@ -74,7 +146,6 @@ body, html {
   color: #fff;
   padding: 20px;
   text-align: center;
-  position: absolute;
-  bottom: 0;
   width: 100%;
 }
+

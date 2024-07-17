@@ -80,7 +80,6 @@ body, html {
   font-size: 18px;
 }
 
-/* Video Background */
 .video-background {
   position: relative;
   width: 100%;
@@ -144,47 +143,6 @@ body, html {
   transform: translateY(-5px);
 }
 
-.carousel {
-  width: 100%;
-  max-width: 100%;
-  margin-top: -50px; 
-}
-
-.carousel-inner {
-  height: 100vh; 
-}
-
-.carousel-item img {
-  object-fit: contain; 
-  width: 100%; 
-  height: 100%; 
-}
-
-.carousel-caption {
-  position: absolute;
-  right: 19%; 
-  transform: translateY(-40%);
-  z-index: 10;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  color: #fff;
-  text-align: right;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-end;
-}
-
-.carousel-caption h5 {
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
-.carousel-caption p {
-  font-size: 16px;
-  margin-bottom: 0;
-}
-
 .footer {
   background-color: #333;
   color: #fff;
@@ -195,7 +153,7 @@ body, html {
 .container-fluid {
   background-color: #000;
   color: #fff;
-  padding: 15px 50px;
+  padding: 15px 50px; /* Ajusta el padding superior e inferior para aumentar el tamaño */
   margin: 0;
   max-width: 100%;
   text-align: center;
@@ -216,45 +174,46 @@ body, html {
   margin: 0 auto;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 /* Reset de estilos por defecto */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  text-decoration: none;
-  list-style: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
 }
 
 /* Estilo del encabezado */
 .header {
-  background-image: url(imagenes/posible\ tigre.jpg);
-  background-position: center bottom;
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 70vh;
-  display: flex;
-  align-items: center;
+    background-image: url(imagenes/posible\ tigre.jpg);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
 }
 
+/* Contenido del encabezado */
 .header {
   background-image: linear-gradient(
-    rgba(0, 0, 0, 0.7),
-    rgba(0, 0, 0, 0.7)
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)
   ), url(images/bg.jpg);
   background-position: center bottom;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 90vh;
+  min-height: 90vh; /* Ajustado de 70vh a 90vh */
   display: flex;
   align-items: center;
 }
 
 .header-content {
   text-align: center;
-  max-width: 500px;
-  margin: 50 auto;
+  max-width: 500px; /* Añadido para ajustar el ancho máximo del contenido */
+  margin: 50 auto; /* Centra el contenido */
 }
 
 .header-content h1 {
@@ -268,274 +227,214 @@ body, html {
 .header-content p {
   font-size: 16px;
   color: aliceblue;
-  padding: 0 50px;
+  padding: 0 50px; /* Reducido de 250px a 50px */
   margin-bottom: 25px;
 }
 
 .btn-1 {
-  display: inline-block;
-  padding: 11px 35px;
-  background-color: rgb(237, 168, 84);
-  color: aliceblue;
-  text-transform: uppercase;
+    display: inline-block;
+    padding: 11px 35px;
+    background-color: rgb(237, 168, 84);
+    color: aliceblue;
+    text-transform: uppercase;
 }
 
 .btn-1:hover {
-  background-color: tomato;
+    background-color: tomato;
 }
 
 /* Sección de café */
 .coffee {
-  padding: 100px 0;
-  background-color: #f0f0f0;
-  position: relative;
+    padding: 100px 0;
+    background-color: #f0f0f0; /* Color de fondo */
+    position: relative;
 }
 
 .coffee-content {
-  text-align: center;
+    text-align: center;
 }
 
 .coffee-content h2 {
-  font-size: 55px;
-  line-height: 70px;
-  color: #333;
-  text-transform: uppercase;
-  padding: 0 20px;
-  margin-bottom: 15px;
+    font-size: 55px;
+    line-height: 70px;
+    color: #333; /* Color del título */
+    text-transform: uppercase;
+    padding: 0 20px; /* Ajusta el padding según necesites */
+    margin-bottom: 15px;
 }
 
 .txt-p {
-  font-size: 16px;
-  color: #666;
-  padding: 0 20px;
-  margin-bottom: 35px;
+    font-size: 16px;
+    color: #666; /* Color del texto */
+    padding: 0 20px; /* Ajusta el padding según necesites */
+    margin-bottom: 35px;
 }
 
 /* Grupo de perfumes */
 .coffee-group {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
 }
 
 .coffee-1 {
-  flex: 1 1 30%;
-  padding: 20px;
-  text-align: center;
+    padding: 0 20px; /* Ajusta el padding según necesites */
+    text-align: center;
 }
 
 .coffee-1 img {
-  width: 200px;
-  border-radius: 50%;
+    width: 100px;
+    height: auto;
+    object-fit: cover;
 }
 
 .coffee-1 h3 {
-  color: #333;
-  font-size: 20px;
-  margin-bottom: 15px;
+    color: #333; /* Color del título del perfume */
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+/* Grupo de cafés */
+.coffee-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.coffee-group p{
+  color: #000;
+}
+
+.coffee-1 {
+    padding: 0 25px;
+}
+
+.coffee-1 img {
+    width: 100px;
+}
+
+.coffee-img {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.coffee-1 h3 {
+    color: black;
+    font-size: 20px;
+    margin-bottom: 15px;
 }
 
 /* Sección de servicios con imagen de fondo */
 .services {
-  background-image: linear-gradient(
-    rgba(70, 66, 66, 0.7),
-    rgba(0, 0, 0, 0.7)
-  ), url(imagenes/fondo2.jpg);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  padding: 100px 0;
+    background-image: linear-gradient(
+        rgba(70, 66, 66, 0.7),
+        rgba(0, 0, 0, 0.7)
+    ), url(imagenes/fondo2.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 100px 0;
 }
 
 .services-content {
-  text-align: center;
+    text-align: center;
 }
 
 .services-content h2 {
-  font-size: 55px;
-  line-height: 70px;
-  color: #f9f9f9;
-  text-transform: uppercase;
-  margin-bottom: 50px;
+    font-size: 55px;
+    line-height: 70px;
+    color: #f9f9f9;
+    text-transform: uppercase;
+    margin-bottom: 50px;
 }
 
 .services-content p {
-  font-size: 16px;
-  color: bisque;
-  margin-bottom: 50px;
-  padding: 0 100px;
+    font-size: 16px;
+    color: bisque;
+    margin-bottom: 50px;
+    padding: 0 100px;
 }
 
 .services-group {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
 }
 
 .services-1 {
-  flex: 1 1 30%;
-  padding: 20px;
-  text-align: center;
+    padding: 0 100px;
 }
 
 .services-1 img {
-  width: 90px;
-  margin-bottom: 15px;
+    width: 90px;
+    margin-bottom: px;
 }
 
 .services-1 h3 {
-  font-size: 24px;
-  color: antiquewhite;
-  margin-bottom: 20px;
+    color: #3f3d3c;
+    font-size: 18px;
 }
 
-.services-1 p {
-  font-size: 16px;
-  color: aliceblue;
+/* Sección general con imagen a la izquierda y derecha */
+.general {
+    display: flex;
 }
 
-/* Sección de recetas */
-.recipes {
-  padding: 100px 0;
-  background-color: #f0f0f0;
+.general-1 {
+    width: 50%;
+    padding: 100px 250px 100px 100px;
+    background-color: #e1e2e6;
 }
 
-.recipes-content {
-  text-align: center;
+.general-2 {
+    background-image: url(imagenes/singlee.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
 }
 
-.recipes-content h2 {
-  font-size: 55px;
-  line-height: 70px;
-  color: #333;
-  text-transform: uppercase;
-  margin-bottom: 20px;
+.general-3 {
+    background-image: url(imagenes/jackdanieles07.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
 }
 
-.recipes-content p {
-  font-size: 16px;
-  color: #666;
-  margin-bottom: 50px;
+.general h2 {
+    font-size: 55px;
+    line-height: 70px;
+    color: #1d1d1d;
+    text-transform: uppercase;
+    margin-bottom: 35px;
 }
 
-.recipes-group {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+.general p {
+    font-size: 16px;
+    color: #3f3d3c;
+    margin-bottom: 35px;
 }
 
-.recipes-1 {
-  flex: 1 1 30%;
-  padding: 20px;
-  text-align: center;
-}
-
-.recipes-1 img {
+.carousel-image {
   width: 100%;
-  border-radius: 10px;
-  margin-bottom: 20px;
+  height: 600px; /* Ajusta esta altura según tus necesidades */
+  object-fit: cover; /* Asegura que la imagen cubra el área sin distorsionarse */
 }
 
-.recipes-1 h3 {
-  font-size: 24px;
-  color: #333;
-  margin-bottom: 20px;
+.btn-1 {
+    display: inline-block;
+    padding: 11px 35px;
+    background-color: rgb(237, 168, 84);
+    color: aliceblue;
+    text-transform: uppercase;
+    transition: background-color 0.3s, transform 0.3s;
+    border-radius: 5px; /* Agrega borde redondeado */
 }
 
-.recipes-1 p {
-  font-size: 16px;
-  color: #666;
+.btn-1:hover {
+    background-color: tomato;
+    transform: translateY(-5px);
 }
-
-.recipes-1 a {
-  display: inline-block;
-  padding: 11px 35px;
-  background-color: #eda854;
-  color: aliceblue;
-  text-transform: uppercase;
-}
-
-.recipes-1 a:hover {
-  background-color: tomato;
-}
-
-/* Media Queries */
-@media (max-width: 991px) {
-  .header-content h1 {
-    font-size: 40px;
-    line-height: 60px;
-  }
-
-  .header-content p {
-    font-size: 14px;
-    padding: 0 20px;
-  }
-
-  .coffee-1, .services-1, .recipes-1 {
-    flex: 1 1 45%;
-    margin-bottom: 30px;
-  }
-}
-
-@media (max-width: 767px) {
-  .header-content h1 {
-    font-size: 30px;
-    line-height: 50px;
-  }
-
-  .header-content p {
-    font-size: 12px;
-    padding: 0 10px;
-  }
-
-  .coffee-1, .services-1, .recipes-1 {
-    flex: 1 1 100%;
-    margin-bottom: 20px;
-  }
-}
-
-@media (max-width: 575px) {
-  .navbar {
-    padding: 10px 20px;
-  }
-
-  .navbar .brand {
-    font-size: 20px;
-  }
-
-  .navbar .nav-links a {
-    font-size: 16px;
-  }
-
-  .header-content h1 {
-    font-size: 24px;
-    line-height: 40px;
-  }
-
-  .header-content p {
-    font-size: 12px;
-    padding: 0 5px;
-  }
-
-  .text-container h1 {
-    font-size: 36px;
-  }
-
-  .text-container p {
-    font-size: 16px;
-  }
-
-  .buy-button {
-    padding: 10px 20px;
-    font-size: 16px;
-  }
-}
-
-
-
-
-
 

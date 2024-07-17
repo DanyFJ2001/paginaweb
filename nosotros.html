@@ -8,45 +8,66 @@
   <link rel="stylesheet" href="css/sexto.css">
 </head>
 <body>
-
-<nav class="navbar">
-  <div class="container-fluid">
-    <div class="brand">Lumina</div>
-    <ul class="nav-links">
-      <li><a href="index.html">Inicio</a></li>
-      <li><a href="producc.html">Productos</a></li>
-      <li><a href="nosotros.html">Sobre Nosotros</a></li>
-      <li><a href="contacto.html">Contacto</a></li>
-    </ul>
-  </div>
-</nav>
-
-<section class="section about-section">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-6">
-        <h2>Misión</h2>
-        <p>Nuestra misión en Lumina es crear fragancias excepcionales que no solo sean una expresión de lujo y elegancia, sino que también evocan emociones y recuerdos inolvidables. Nos esforzamos por utilizar los mejores ingredientes y técnicas de producción para asegurar la calidad y la satisfacción de nuestros clientes en cada botella.</p>
-      </div>
-      <div class="col-lg-6">
-        <h2>Visión</h2>
-        <p>Nuestra visión en Lumina es liderar el mercado de fragancias premium, siendo reconocidos globalmente por nuestra innovación, creatividad y compromiso con la excelencia. Nos dedicamos a expandir nuestra colección con nuevos aromas inspiradores que capturan la esencia de la sofisticación y el encanto.</p>
-      </div>
+  <nav class="navbar">
+    <div class="container-fluid">
+      <div class="brand">Lumina</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="producc.html">Productos</a></li>
+        <li><a href="nosotros.html">Sobre Nosotros</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
     </div>
-  </div>
+  </nav>
+  <section class="services">
+    <div class="container">
+        <div class="services-content">
+            <h2>lumina</h2>
+           
+        </div>
+        <div class="services-group">
+    </div>
 </section>
+  
+  <main class="container mt-5">
+    <section class="about-us text-center">
+      
+      <h2 class="display-4">Nuestra Historia</h2>
+      <p class="lead">
+        Fundada en 1990, Lumina comenzó como una pequeña tienda familiar con la visión de proporcionar productos de alta calidad a nuestros clientes. A lo largo de los años, hemos crecido hasta convertirnos en una marca respetada y reconocida en el mercado. Nuestra misión es ofrecer productos excepcionales que inspiran y mejoran la vida de nuestros clientes.
+      </p>
+      <p class="lead">
+        Nos esforzamos por ser líderes en calidad e innovación, manteniendo los más altos estándares en todo lo que hacemos. Nuestra visión es ser una marca globalmente reconocida, conocida por su excelencia y compromiso con la calidad, inspirando confianza y lealtad en nuestros clientes y colaboradores.
+      </p>
+      <p class="lead">
+        Con una pasión inquebrantable por la excelencia y un enfoque en la atención al cliente, Lumina se dedica a crear productos que no solo satisfacen sino que superan las expectativas. Nos enorgullece nuestra historia y miramos hacia el futuro con determinación y optimismo, buscando continuamente nuevas formas de innovar y expandir nuestra presencia en el mercado.
+      </p>
+    </section>
+  </main>
 
-<footer class="footer">
-  <div class="container">
-    <p>Contacto: info@lumina.com | Teléfono: 0987973857</p>
-    <p>&copy; 2024 Lumina. Todos los derechos reservados.</p>
-  </div>
-</footer>
+  <footer class="footer mt-auto py-3 bg-dark">
+    <div class="container">
+      <p class="mb-0">Contacto: info@lumina.com | Teléfono: 0987973857</p>
+      <p class="mb-0">&copy; 2024 Lumina. Todos los derechos reservados.</p>
+    </div>
+  </footer>
 
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        var loadingScreen = document.getElementById("loading-screen");
+        loadingScreen.style.display = "flex";
+
+        setTimeout(function() {
+            loadingScreen.style.display = "none";
+        }, 2000); // 2 segundos de carga
+    });
+
+    window.addEventListener("beforeunload", function() {
+        var loadingScreen = document.getElementById("loading-screen");
+        loadingScreen.style.display = "flex";
+    });
+  </script>
 </body>
 </html>
-
-
-
 
 
