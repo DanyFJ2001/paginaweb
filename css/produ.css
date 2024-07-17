@@ -206,3 +206,46 @@ button:hover {
 .p7{
     width: 270px;
 }
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  
+  /* Estilos para la barra lateral del carrito */
+  .carrito {
+    position: fixed;
+    right: -400px; /* Empieza fuera del viewport */
+    top: 9rem; /* Ajuste para que esté debajo de la barra de navegación */
+    width: 400px;
+    height: 50%;
+    background-color: white;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    transition: right 0.3s;
+    z-index: 1100; /* Asegura que esté por encima de otros elementos, como el footer */
+}
+
+.carrito.active {
+    right: 0; /* Muestra la barra lateral cuando está activa */
+}
+
+
+.carrito h2 {
+    margin-top: 0;
+}
+
+.table {
+    width: 100%;
+}
+
+/* Ajustes para la tabla */
+.table th, .table td {
+    text-align: left;
+}
+
+#total {
+    font-weight: bold;
+}
