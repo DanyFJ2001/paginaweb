@@ -1,15 +1,16 @@
 
-/* Estilos para la página de productos */
 
-/* Ajustes generales */
 body {
-    padding-top: 4.5rem; /* Ajuste para la barra de navegación fija */
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: white;
 }
 
-
+/* Estilos para la barra de navegación */
 .navbar {
     background-color: rgba(0, 0, 0, 0.6);
-    padding: 15px 50px;
+    padding: 15px 20px; /* Reducir el padding horizontal */
     transition: top 0.3s;
     position: fixed;
     top: 0;
@@ -25,22 +26,67 @@ body {
 .navbar .navbar-brand {
     font-size: 24px;
     color: #fff;
+    margin-right: 20px; /* Espacio entre la marca y los botones */
 }
 
 .navbar .navbar-nav {
     display: flex;
     justify-content: flex-end;
     flex-grow: 1;
+    align-items: center; /* Centrar verticalmente los elementos */
 }
 
 .navbar .nav-item {
-    margin: 0 15px;
+    margin: 0 10px; /* Espacio entre los elementos */
 }
 
 .navbar .nav-link {
     color: #fff;
     font-size: 18px;
     text-decoration: none;
+    padding: 10px 15px; /* Tamaño uniforme de los botones */
+}
+
+/* Estilos para el carrito */
+.carrito {
+    position: fixed;
+    right: -400px; /* Empieza fuera del viewport */
+    top: 9rem; /* Ajuste para que esté debajo de la barra de navegación */
+    width: 400px;
+    height: 50%;
+    background-color: white;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    transition: right 0.3s;
+    z-index: 1100; /* Asegura que esté por encima de otros elementos, como el footer */
+}
+
+.carrito.active {
+    right: 0;
+}
+
+.carrito h2 {
+    margin-top: 0;
+}
+
+.table {
+    width: 100%;
+}
+
+/* Ajustes para la tabla */
+.table th, .table td {
+    text-align: left;
+}
+
+#total {
+    font-weight: bold;
+}
+
+/* Estilos para la página de productos */
+
+/* Ajustes generales */
+body {
+    padding-top: 4.5rem; /* Ajuste para la barra de navegación fija */
 }
 
 /* Estilos para el footer */
@@ -50,82 +96,78 @@ footer {
     padding: 20px 0;
     text-align: center;
 }
+
 .services {
-    background-image:url(imagenes/jackdanieles07.jpg);
+    background-image: url(imagenes/jackdanieles07.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     padding: 100px 0;
-  }
-  
-  .services-content {
-    text-align: center;
-  }
-  .services-content {
-    text-align: center;
-  }
+}
 
-  
-  .services-1 h3 {
+.services-content {
+    text-align: center;
+}
+
+.services-1 h3 {
     color: #dbd7d5;
     font-size: 18px;
-  }
-  body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: black;
-    color: white;
 }
-.ser1 {
-    background-image:url(imagenes/single.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    padding: 100px 0;
-  }
-  .ser2 {
-    background-image:url(imagenes/gggg.webp);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    padding: 100px 0;
-  }
-  .ser3 {
-    background-image:url(imagenes/bb.png);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    padding: 100px 0;
-  }
-  .ser4 {
-    background-image:url(imagenes/fire.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    padding: 100px 0;
-  }
-  .ser5 {
-    background-image:url(imagenes/maca.webp);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    padding: 100px 0;
-  }
-  .ser6 {
-    background-image:url(imagenes/jameson.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    padding: 100px 0;
-  }
 
+.ser1 {
+    background-image: url(imagenes/single.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 100px 0;
+}
+
+.ser2 {
+    background-image: url(imagenes/gggg.webp);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 100px 0;
+}
+
+.ser3 {
+    background-image: url(imagenes/bb.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 100px 0;
+}
+
+.ser4 {
+    background-image: url(imagenes/fire.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 100px 0;
+}
+
+.ser5 {
+    background-image: url(imagenes/maca.webp);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 100px 0;
+}
+
+.ser6 {
+    background-image: url(imagenes/jameson.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 100px 0;
+}
 
 .jack-coke-section {
     display: flex;
@@ -185,67 +227,41 @@ button:hover {
     max-width: 100%;
     height: auto;
 }
-.p1{
+
+.p1 {
     width: 250px;
 }
-.p2{
+
+.p2 {
     width: 280px;
 }
-.p3{
+
+.p3 {
     width: 270px;
 }
-.p4{
+
+.p4 {
     width: 260px;
 }
-.p5{
+
+.p5 {
     width: 270px;
 }
-.p6{
+
+.p6 {
     width: 270px;
 }
-.p7{
+
+.p7 {
     width: 270px;
 }
+
 .footer {
     background-color: #333;
     color: #fff;
     padding: 20px;
     text-align: center;
-  }
-  
-  
-  /* Estilos para la barra lateral del carrito */
-  .carrito {
-    position: fixed;
-    right: -400px; /* Empieza fuera del viewport */
-    top: 9rem; /* Ajuste para que esté debajo de la barra de navegación */
-    width: 400px;
-    height: 50%;
-    background-color: white;
-    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
-    padding: 20px;
-    transition: right 0.3s;
-    z-index: 1100; /* Asegura que esté por encima de otros elementos, como el footer */
-}
-
-.carrito.active {
-    right: 0; /* Muestra la barra lateral cuando está activa */
-}
-
-
-.carrito h2 {
-    margin-top: 0;
-}
-
-.table {
-    width: 100%;
-}
-
-/* Ajustes para la tabla */
-.table th, .table td {
-    text-align: left;
-}
-
-#total {
-    font-weight: bold;
+    width: 100%; /* Asegura que ocupe todo el ancho disponible */
+    position: fixed; /* Fija el footer en la parte inferior */
+    bottom: 0; /* Alinea el footer en la parte inferior */
 }

@@ -1,0 +1,40 @@
+{
+  "productos": [
+    {
+      "id": "1",
+      "producto": "Jack Daniel's Old No. 7",
+      "precio": 10,
+      "cantidad": 1
+    },
+    {
+      "id": "1",
+      "producto": "Jack Daniel's Old No. 7",
+      "precio": 10,
+      "cantidad": 1
+    },
+    {
+      "id": "1",
+      "producto": "Jack Daniel's Old No. 7",
+      "precio": 10,
+      "cantidad": 1
+    },
+    {
+      "id": "1",
+      "producto": "Jack Daniel's Old No. 7",
+      "precio": 10,
+      "cantidad": 1
+    },
+    {
+      "id": "2",
+      "producto": "Single Barrel Select",
+      "precio": 150,
+      "cantidad": 1
+    },
+    {
+      "id": "2",
+      "producto": "Single Barrel Select",
+      "precio": 150,
+      "cantidad": 1
+    }
+  ]
+}

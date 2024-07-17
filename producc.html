@@ -22,9 +22,10 @@
                     <li class="nav-item">
                         <a class="nav-link" href="contacto.html">Contacto</a>
                     </li>
+                    <a class="btn btn-outline-light" id="carrito-btn">Carrito</a>
                 </ul>
             </div>
-            <button class="btn btn-outline-light" id="carrito-btn">Carrito</button>
+            
         </div>
     </nav>
 
@@ -73,7 +74,7 @@
                     <p>Jack Daniel's Single Barrel Select se distingue por su rico sabor a roble tostado y su inigualable suavidad. Cada barril es único y ofrece una experiencia de sabor exclusiva.</p>
                     <p>Este whisky es perfecto para aquellos que buscan un sabor más intenso y complejo, ideal para disfrutar solo o con un poco de hielo.</p>
                     <p>Experimenta la artesanía y dedicación en cada gota de Jack Daniel's Single Barrel Select.</p>
-                    <button>Comprar</button>
+                    <button onclick="agregarProducto('2','Single Barrel Select', 150)">Comprar</button>
                 </div>
                 <div class="image">
                     <img src="css/imagenes/p2.jpg" alt="Jack Daniel's Single Barrel Select " class="p2">
@@ -99,7 +100,7 @@
                         <p>The Glenlivet 12 Year Old es un whisky escocés de malta conocido por su sabor suave y afrutado. Con notas de pera y manzana, este whisky ofrece una experiencia refrescante y equilibrada.</p>
                         <p>El Glenlivet 12 Year Old es perfecto para aquellos que aprecian un whisky ligero y elegante, ideal para disfrutar solo o con un poco de agua.</p>
                         <p>Descubre la tradición y la calidad en cada sorbo de The Glenlivet 12 Year Old.</p>
-                        <button>Comprar</button>
+                        <button onclick="agregarProducto('3','The Glenlivet 12 Year Old', 80)">Comprar</button>
                     </div>
                 </div>
                 <div class="image">
@@ -128,7 +129,7 @@
                             <p>Johnnie Walker Black Label es un whisky escocés de mezcla premium, reconocido por su sabor profundo y complejo. Con notas de frutas oscuras, vainilla y un toque ahumado, ofrece una experiencia de sabor rica y sofisticada.</p>
                             <p>El Johnnie Walker Black Label es ideal para aquellos que buscan un whisky equilibrado y de alta calidad, perfecto para disfrutar solo, con hielo o en cócteles clásicos.</p>
                             <p>Disfruta de la excelencia y la tradición en cada sorbo de Johnnie Walker Black Label.</p>
-                            <button>Comprar</button>
+                            <button onclick="agregarProducto('4','Johnnie Walker Black Label', 180)">Comprar</button>
                         </div>
                        
                     </div>
@@ -154,7 +155,7 @@
                     <p>Jack Daniel's Tennessee Fire combina el whisky clásico con un toque de canela picante, ofreciendo una experiencia de sabor ardiente y emocionante.</p>
                     <p>Perfecto para disfrutar en chupitos o mezclado en cócteles, Tennessee Fire añade un toque picante a cualquier ocasión.</p>
                     <p>Descubre la intensidad y el calor de Jack Daniel's Tennessee Fire.</p>
-                    <button>Comprar</button>
+                    <button onclick="agregarProducto('5','Jack Daniels Tennessee Fire', 90)">Comprar</button>
                 </div>
                 <div class="image">
                     <img src="css/imagenes/fuegi.jpg" alt="Jack Daniel's Tennessee Fire" class="p5">
@@ -177,7 +178,7 @@
                     <p>The Macallan Double Cask 12 Year Old es un whisky escocés de malta que ofrece un equilibrio perfecto entre dulzura y especias, gracias a su maduración en barricas de roble americano y europeo. Con notas de miel, cítricos y jengibre, este whisky proporciona una experiencia de sabor rica y compleja.</p>
                     <p>El Macallan Double Cask 12 Year Old es ideal para aquellos que aprecian un whisky bien equilibrado y sofisticado, perfecto para disfrutar solo o con un poco de agua.</p>
                     <p>Explora la dedicación y la artesanía en cada sorbo de The Macallan Double Cask 12 Year Old.</p>
-                    <button>Comprar</button>
+                    <button onclick="agregarProducto('6','The Macallan Double Cask 12 Year Old', 190)">Comprar</button>
                 </div>
                 <div class="image">
                     <img src="css/imagenes/12.jpg" alt="Jack Daniel's Tennessee Rye" class="p6">
@@ -199,7 +200,7 @@
                     <p>Jameson Irish Whiskey es conocido por su suavidad y su sabor bien equilibrado. Elaborado a partir de una mezcla de whisky de malta y grano, ofrece notas de vainilla, nuez y una dulzura ligera que lo hace excepcionalmente fácil de beber.</p>
                     <p>El Jameson Irish Whiskey es perfecto para aquellos que buscan un whisky suave y versátil, ideal para disfrutar solo, con hielo o en una variedad de cócteles.</p>
                     <p>Disfruta de la tradición irlandesa y la calidad en cada sorbo de Jameson Irish Whiskey.</p>
-                    <button>Comprar</button>
+                    <button onclick="agregarProducto('7','Jameson Irish Whiskey', 190)">Comprar</button>
                 </div>
                 <div class="image">
                     <img src="css/imagenes/james.jpg" alt="Jack Daniel's Sinatra Select" class="p7">
@@ -208,9 +209,6 @@
         </section>
 
 
-    
-
-    <!-- Barra lateral del carrito -->
     <div id="carrito" class="carrito">
         <h2>Carrito de Compras</h2>
         <table class="table" id="tabla">
@@ -233,16 +231,29 @@
                 <td></td>
             </tfoot>
         </table>
+        <button class="compra">Compra</button>
+    <button class="cerrar-carrito">Cerrar Carrito</button>
+</div>
+
+<script>
+    document.querySelector('.compra').addEventListener('click', function() {
+        alert('¡Gracias por su compra! 😊');
+    });
+
+    document.querySelector('.cerrar-carrito').addEventListener('click', function() {
+        document.getElementById('carrito').style.display = 'none';
+    });
+</script>
     </div>
 
-    <!-- Footer -->
+    
     <footer class="py-4 bg-dark text-white text-center">
         <div class="container">
             <p>&copy; 2024 Lumina. Todos los derechos reservados.</p>
         </div>
     </footer>
 
-    <!-- Scripts -->
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/index.js"></script>
 </body>
