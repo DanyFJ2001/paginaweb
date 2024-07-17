@@ -261,7 +261,4 @@ button:hover {
     color: #fff;
     padding: 20px;
     text-align: center;
-    width: 100%; /* Asegura que ocupe todo el ancho disponible */
-    position: fixed; /* Fija el footer en la parte inferior */
-    bottom: 0; /* Alinea el footer en la parte inferior */
 }
