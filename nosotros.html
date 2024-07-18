@@ -8,30 +8,41 @@
   <link rel="stylesheet" href="css/sexto.css">
 </head>
 <body>
-  <nav class="navbar">
-    <div class="container-fluid">
-      <div class="brand">Lumina</div>
-      <ul class="nav-links">
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="producc.html">Productos</a></li>
-        <li><a href="nosotros.html">Sobre Nosotros</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-      </ul>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Lumina</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="nosotros.html">Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </div>
     </div>
   </nav>
+
   <section class="services">
     <div class="container">
-        <div class="services-content">
-            <h2>lumina</h2>
-           
-        </div>
-        <div class="services-group">
+      <div class="services-content">
+        <h2>lumina</h2>
+      </div>
+      <div class="services-group">
+      </div>
     </div>
-</section>
+  </section>
   
   <main class="container mt-5">
-    <section class="about-us text-center">
-      
+    <section class="about-us text-center" id="about-us">
       <h2 class="display-4">Nuestra Historia</h2>
       <p class="lead">
         Fundada en 1990, Lumina comenzó como una pequeña tienda familiar con la visión de proporcionar productos de alta calidad a nuestros clientes. A lo largo de los años, hemos crecido hasta convertirnos en una marca respetada y reconocida en el mercado. Nuestra misión es ofrecer productos excepcionales que inspiran y mejoran la vida de nuestros clientes.
@@ -54,17 +65,15 @@
 
   <script>
     document.addEventListener("DOMContentLoaded", function() {
-        var loadingScreen = document.getElementById("loading-screen");
-        loadingScreen.style.display = "flex";
+        var aboutUsSection = document.getElementById("about-us");
 
-        setTimeout(function() {
-            loadingScreen.style.display = "none";
-        }, 2000); // 2 segundos de carga
-    });
+        aboutUsSection.addEventListener("mouseover", function() {
+            aboutUsSection.classList.add("background-image");
+        });
 
-    window.addEventListener("beforeunload", function() {
-        var loadingScreen = document.getElementById("loading-screen");
-        loadingScreen.style.display = "flex";
+        aboutUsSection.addEventListener("mouseout", function() {
+            aboutUsSection.classList.remove("background-image");
+        });
     });
   </script>
 </body>

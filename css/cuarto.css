@@ -1,80 +1,111 @@
-
-
 body, html {
     margin: 0;
     padding: 0;
     width: 100%;
     height: 100%;
     font-family: 'Playfair Display', serif;
-    background-color: #000;
-    color: #fff;
+    background-color: #000; /* Fondo negro */
+    color: #fff; /* Texto blanco */
     display: flex;
     flex-direction: column;
 }
 
 .navbar {
-    background: rgba(0, 0, 0, 0.6);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 50px;
-    box-sizing: border-box;
-    z-index: 10;
-}
-
-.navbar .container-fluid {
-    padding: 0;
-    margin: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 15px 20px; /* Reducir el padding horizontal */
+    transition: top 0.3s;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+  }
+  
+  .navbar .container {
     width: 100%;
     max-width: 100%;
-    text-align: center;
-}
-
-.navbar .brand {
+  }
+  
+  .navbar .navbar-brand {
     font-size: 24px;
     color: #fff;
-}
-
-.navbar .nav-links {
-    list-style: none;
+    margin-right: 20px; /* Espacio entre la marca y los botones */
+  }
+  
+  .navbar .navbar-nav {
     display: flex;
-    margin: 0;
-}
-
-.navbar .nav-links li {
-    margin: 0 15px;
-}
-
-.navbar .nav-links a {
+    justify-content: flex-end;
+    flex-grow: 1;
+    align-items: center; /* Centrar verticalmente los elementos */
+  }
+  
+  .navbar .nav-item {
+    margin: 0 10px; /* Espacio entre los elementos */
+  }
+  
+  .navbar .nav-link {
     color: #fff;
-    text-decoration: none;
     font-size: 18px;
-}
+    text-decoration: none;
+    padding: 10px 15px; /* Tamaño uniforme de los botones */
+  }
 
 .contact-section {
     flex: 1;
     padding: 100px 0;
     text-align: center;
+    background-color: #000; /* Fondo negro */
+    color: #fff; /* Texto blanco */
 }
 
 .contact-section h2 {
     font-size: 36px;
     margin-bottom: 20px;
+    color: #fff; /* Asegura que el título sea blanco */
 }
 
 .contact-section p {
     font-size: 18px;
     line-height: 1.6;
+    color: #fff; /* Asegura que los párrafos sean blancos */
 }
 
 .contact-info {
     margin-top: 50px;
+    color: #fff; /* Asegura que el texto de información de contacto sea blanco */
 }
 
 .footer {
-    background-color: #333;
+    background-color: #333; /* Fondo oscuro del footer */
     color: #fff;
     padding: 20px;
     text-align: center;
     margin-top: auto;
 }
+
+.form-label {
+    color: #fff; 
+}
+
+.form-control {
+    background-color: #333; 
+    color: #fff; 
+    border: none;
+}
+
+.form-control:focus {
+    background-color: #444; 
+    color: #fff;
+}
+
+.btn-primary {
+    background-color: #fff;
+    color: #000;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
+

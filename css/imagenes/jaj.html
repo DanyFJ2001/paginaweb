@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Productos</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .product-card {
+            margin-bottom: 20px;
+        }
+        .product-image {
+            height: 200px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Tienda de Productos</h1>
+        <div class="form-group mt-4">
+            <input type="text" id="searchInput" class="form-control" placeholder="Buscar productos...">
+        </div>
+        <div class="row" id="productList">
+            <!-- Productos -->
+            <div class="col-md-3 product-card" data-title="papas">
+                <div class="card">
+                    <img src="../assets/papas.jfif" class="card-img-top product-image" alt="papas">
+                    <div class="card-body">
+                        <h5 class="card-title">Papas</h5>
+                        <p class="card-text">$10.00</p>
+                        <button class="btn btn-primary">Añadir al carrito</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 product-card" data-title="arroz">
+                <div class="card">
+                    <img src="../assets/arroz.jpg" class="card-img-top product-image" alt="arroz">
+                    <div class="card-body">
+                        <h5 class="card-title">arroz</h5>
+                        <p class="card-text">$20.00</p>
+                        <button class="btn btn-primary">Añadir al carrito</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Repetir para más productos -->
+            <div class="col-md-3 product-card" data-title="fideos">
+                <div class="card">
+                    <img src="../assets/fideos.jfif" class="card-img-top product-image" alt="fideos">
+                    <div class="card-body">
+                        <h5 class="card-title">fideos</h5>
+                        <p class="card-text">$30.00</p>
+                        <button class="btn btn-primary">Añadir al carrito</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 product-card" data-title="azucar">
+                <div class="card">
+                    <img src="../assets/asucar.jfif" class="card-img-top product-image" alt="azucar">
+                    <div class="card-body">
+                        <h5 class="card-title">azucar</h5>
+                        <p class="card-text">$40.00</p>
+                        <button class="btn btn-primary">Añadir al carrito</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 product-card" data-title="sal">
+                <div class="card">
+                    <img src="../assets/sal.jfif" class="card-img-top product-image" alt="sal">
+                    <div class="card-body">
+                        <h5 class="card-title">sal</h5>
+                        <p class="card-text">$50.00</p>
+                        <button class="btn btn-primary">Añadir al carrito</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 product-card" data-title="colas">
+                <div class="card">
+                    <img src="../assets/colas.jfif" class="card-img-top product-image" alt="colas">
+                    <div class="card-body">
+                        <h5 class="card-title">colas</h5>
+                        <p class="card-text">$60.00</p>
+                        <button class="btn btn-primary">Añadir al carrito</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 product-card" data-title="tomates">
+                <div class="card">
+                    <img src="../assets/tomate.jfif" class="card-img-top product-image" alt="tomates">
+                    <div class="card-body">
+                        <h5 class="card-title">tomates</h5>
+                        <p class="card-text">$70.00</p>
+                        <button class="btn btn-primary">Añadir al carrito</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 product-card" data-title="cebolla">
+                <div class="card">
+                    <img src="../assets/sal.jfif" class="card-img-top product-image" alt="cebolla">
+                    <div class="card-body">
+                        <h5 class="card-title">cebolla</h5>
+                        <p class="card-text">$80.00</p>
+                        <button class="btn btn-primary">Añadir al carrito</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 product-card" data-title="frejol">
+                <div class="card">
+                    <img src="../assets/frejol.jfif" class="card-img-top product-image" alt="frejol">
+                    <div class="card-body">
+                        <h5 class="card-title">frejol</h5>
+                        <p class="card-text">$90.00</p>
+                        <button class="btn btn-primary">Añadir al carrito</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 product-card" data-title="habas">
+                <div class="card">
+                    <img src="../assets/abas.jfif" class="card-img-top product-image" alt="habas">
+                    <div class="card-body">
+                        <h5 class="card-title">habas</h5>
+                        <p class="card-text">$100.00</p>
+                        <button class="btn btn-primary">Añadir al carrito</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        document.getElementById('searchInput').addEventListener('keyup', function() {
+            const searchQuery = this.value.toLowerCase();
+            const productCards = document.querySelectorAll('.product-card');
+
+            productCards.forEach(function(card) {
+                const title = card.querySelector('.card-title').textContent.toLowerCase();
+                if (title.includes(searchQuery)) {
+                    card.style.display = '';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+</html>

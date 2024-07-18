@@ -15,49 +15,48 @@ body, html {
 }
 
 .navbar {
-  position: absolute;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 15px 20px; /* Reducir el padding horizontal */
+  transition: top 0.3s;
+  position: fixed;
   top: 0;
-  left: 0;
   width: 100%;
-  background: rgba(0, 0, 0, 0.6);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 50px;
-  box-sizing: border-box;
-  z-index: 10;
+  z-index: 1000; /* Asegura que esté por encima de otros elementos */
 }
 
-.navbar .container-fluid {
-  padding: 0;
-  margin: 0;
+.navbar .container {
   width: 100%;
   max-width: 100%;
 }
 
-.navbar .brand {
+.navbar .navbar-brand {
   font-size: 24px;
   color: #fff;
+  margin-right: 20px; /* Espacio entre la marca y los botones */
 }
 
-.navbar .nav-links {
-  list-style: none;
+.navbar .navbar-nav {
   display: flex;
-  margin: 0;
+  justify-content: flex-end;
+  flex-grow: 1;
+  align-items: center; /* Centrar verticalmente los elementos */
 }
 
-.navbar .nav-links li {
-  margin: 0 15px;
+.navbar .nav-item {
+  margin: 0 10px; /* Espacio entre los elementos */
 }
 
-.navbar .nav-links a {
+.navbar .nav-link {
   color: #fff;
-  text-decoration: none;
   font-size: 18px;
+  text-decoration: none;
+  padding: 10px 15px; /* Tamaño uniforme de los botones */
 }
 
 .about-us {
   padding: 100px 0;
+  background-color: #333; /* Color de fondo por defecto */
+  transition: background-image 0.5s ease-in-out;
 }
 
 .about-us h2 {
@@ -148,4 +147,13 @@ main {
   text-align: center;
   width: 100%;
 }
+
+.about-us.background-image {
+  background-image: url('imagenes/pistachios-3450670_1280.jpg'); /* URL de la imagen de fondo */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+}
+
 

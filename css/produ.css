@@ -8,44 +8,7 @@ body {
 }
 
 /* Estilos para la barra de navegación */
-.navbar {
-    background-color: rgba(0, 0, 0, 0.6);
-    padding: 15px 20px; /* Reducir el padding horizontal */
-    transition: top 0.3s;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000; /* Asegura que esté por encima de otros elementos */
-}
 
-.navbar .container {
-    width: 100%;
-    max-width: 100%;
-}
-
-.navbar .navbar-brand {
-    font-size: 24px;
-    color: #fff;
-    margin-right: 20px; /* Espacio entre la marca y los botones */
-}
-
-.navbar .navbar-nav {
-    display: flex;
-    justify-content: flex-end;
-    flex-grow: 1;
-    align-items: center; /* Centrar verticalmente los elementos */
-}
-
-.navbar .nav-item {
-    margin: 0 10px; /* Espacio entre los elementos */
-}
-
-.navbar .nav-link {
-    color: #fff;
-    font-size: 18px;
-    text-decoration: none;
-    padding: 10px 15px; /* Tamaño uniforme de los botones */
-}
 
 /* Estilos para el carrito */
 .carrito {
@@ -262,3 +225,41 @@ button:hover {
     padding: 20px;
     text-align: center;
 }
+.navbar {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 15px 20px; /* Reducir el padding horizontal */
+    transition: top 0.3s;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+  }
+  
+  .navbar .container {
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  .navbar .navbar-brand {
+    font-size: 24px;
+    color: #fff;
+    margin-right: 20px; /* Espacio entre la marca y los botones */
+  }
+  
+  .navbar .navbar-nav {
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 1;
+    align-items: center; /* Centrar verticalmente los elementos */
+  }
+  
+  .navbar .nav-item {
+    margin: 0 10px; /* Espacio entre los elementos */
+  }
+  
+  .navbar .nav-link {
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 10px 15px; /* Tamaño uniforme de los botones */
+  }
